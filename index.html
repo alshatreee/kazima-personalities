@@ -1,1 +1,498 @@
-TEST_REPLACE
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>كاظمة | شخصيات وثّقت الكويت — أرشيف كامل</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@300;400;500;700;800&display=swap');
+  *{margin:0;padding:0;box-sizing:border-box}
+  :root{
+    --bg:#0F1923;--bg2:#162231;--bg3:#1C2D40;--bg4:#111D29;
+    --gold:#C8A45C;--gd:rgba(200,164,92,.12);--gg:rgba(200,164,92,.25);
+    --tx:#E8E0D0;--td:#8A9AB0;--tb:#F5F0E8;
+    --blue:#4A90D9;--green:#5CAA6E;--red:#C85C5C;--purple:#9B6EC8;
+    --bd:rgba(200,164,92,.1);--gl:rgba(22,34,49,.92);
+  }
+  body{font-family:'Tajawal',sans-serif;background:var(--bg);color:var(--tx);min-height:100vh}
+  body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse at 20% 10%,rgba(200,164,92,.04) 0%,transparent 50%),radial-gradient(ellipse at 80% 90%,rgba(74,144,217,.03) 0%,transparent 50%);pointer-events:none}
+  a{color:var(--gold);text-decoration:none}
+  a:hover{text-decoration:underline}
+
+  /* HERO */
+  .hero{text-align:center;padding:48px 20px 38px;background:linear-gradient(180deg,rgba(200,164,92,.06) 0%,transparent 100%);border-bottom:1px solid var(--bd);position:relative}
+  .hero::after{content:'';position:absolute;bottom:0;left:15%;right:15%;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+  .bc{font-size:13px;color:var(--td);margin-bottom:14px}
+  .bc a{color:var(--gold)} .bc span{margin:0 6px}
+  .hero h1{font-family:'Amiri',serif;font-size:clamp(26px,5vw,42px);color:var(--tb);margin-bottom:8px}
+  .hero h1 em{color:var(--gold);font-style:normal}
+  .hero .ld{font-size:15px;color:var(--td);max-width:680px;margin:0 auto 22px;line-height:1.75}
+  .sts{display:flex;justify-content:center;gap:28px;flex-wrap:wrap}
+  .st b{font-family:'Amiri',serif;font-size:26px;color:var(--gold);display:block}
+  .st small{font-size:12px;color:var(--td)}
+
+  /* FILTERS */
+  .flt{position:sticky;top:0;z-index:100;background:var(--gl);backdrop-filter:blur(20px);border-bottom:1px solid var(--bd);padding:11px 20px}
+  .flt-in{max-width:1100px;margin:0 auto;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  .fb{padding:6px 13px;border-radius:18px;border:1px solid var(--bd);background:0;color:var(--td);font-family:inherit;font-size:12px;cursor:pointer;transition:.25s}
+  .fb:hover{border-color:var(--gold);color:var(--gold)}
+  .fb.on{background:var(--gold);color:var(--bg);border-color:var(--gold);font-weight:500}
+  .sw{flex:1;min-width:160px;position:relative}
+  .sw input{width:100%;padding:7px 14px 7px 34px;border-radius:18px;border:1px solid var(--bd);background:rgba(255,255,255,.04);color:var(--tx);font-family:inherit;font-size:13px;outline:0}
+  .sw input:focus{border-color:var(--gold)}
+  .sw svg{position:absolute;left:11px;top:50%;transform:translateY(-50%);width:14px;height:14px;color:var(--td)}
+
+  /* MAIN */
+  .main{max-width:1100px;margin:0 auto;padding:28px 20px 60px}
+
+  /* PERSON ENTRY */
+  .pe{background:var(--bg2);border:1px solid var(--bd);border-radius:16px;margin-bottom:24px;overflow:hidden;transition:border-color .3s}
+  .pe:hover{border-color:var(--gg)}
+
+  /* Header */
+  .ph{display:flex;align-items:center;gap:14px;padding:18px 22px;cursor:pointer;background:rgba(200,164,92,.025);border-bottom:1px solid var(--bd)}
+  .pav{width:64px;height:64px;border-radius:50%;border:2px solid rgba(200,164,92,.25);flex-shrink:0;overflow:hidden;background:linear-gradient(135deg,var(--gd),rgba(74,144,217,.1))}
+  .pav img{width:100%;height:100%;object-fit:cover;filter:sepia(10%)}
+  .pav.noi{display:flex;align-items:center;justify-content:center;font-family:'Amiri',serif;font-size:24px;color:var(--gold)}
+  .pi{flex:1}
+  .pn{font-family:'Amiri',serif;font-size:20px;font-weight:700;color:var(--tb);line-height:1.3}
+  .pen{font-size:12px;color:var(--td);margin-top:2px}
+  .pm{display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin-top:5px;font-size:12px;color:var(--td)}
+  .pm .s{width:3px;height:3px;background:var(--td);border-radius:50%}
+  .tg{display:inline-flex;gap:5px;flex-wrap:wrap}
+  .t{font-size:10px;padding:2px 8px;border-radius:8px;border:1px solid;white-space:nowrap}
+  .t-r{color:var(--blue);border-color:rgba(74,144,217,.3);background:rgba(74,144,217,.06)}
+  .t-o{color:var(--green);border-color:rgba(92,170,110,.3);background:rgba(92,170,110,.06)}
+  .t-p{color:var(--gold);border-color:rgba(200,164,92,.3);background:var(--gd)}
+  .pt{font-size:20px;color:var(--gold);transition:transform .3s;width:28px;height:28px;display:flex;align-items:center;justify-content:center}
+  .pe.open .pt{transform:rotate(180deg)}
+
+  /* Body */
+  .pb{max-height:0;overflow:hidden;transition:max-height .5s cubic-bezier(.4,0,.2,1)}
+  .pe.open .pb{max-height:4000px}
+  .pc{padding:22px}
+
+  /* Article */
+  .pa{font-size:15px;line-height:1.85;margin-bottom:18px}
+  .pa p{margin-bottom:10px}
+  .pa strong{color:var(--tb)}
+
+  /* Info grid */
+  .ig{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-bottom:18px}
+  .ib{background:var(--bg4);border:1px solid var(--bd);border-radius:10px;padding:12px 14px}
+  .ib-l{font-size:10px;text-transform:uppercase;letter-spacing:1px;color:var(--gold);margin-bottom:5px;font-weight:600}
+  .ib-v{font-size:13px;color:var(--tx);line-height:1.6}
+
+  /* Books */
+  .bks{margin-bottom:18px}
+  .bks-t{font-family:'Amiri',serif;font-size:17px;color:var(--gold);margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid var(--bd)}
+  .bk{display:flex;gap:14px;align-items:flex-start;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.03)}
+  .bk:last-child{border:0}
+  .bk-img{width:70px;height:95px;border-radius:4px;overflow:hidden;flex-shrink:0;background:var(--gd);border:1px solid rgba(200,164,92,.15)}
+  .bk-img img{width:100%;height:100%;object-fit:cover}
+  .bk-d{flex:1}
+  .bk-n{font-size:15px;font-weight:600;color:var(--tb);margin-bottom:3px}
+  .bk-m{font-size:13px;color:var(--td);line-height:1.6}
+
+  /* Gallery */
+  .gal{margin-bottom:18px}
+  .gal-g{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px}
+  .gal-i{aspect-ratio:4/3;border-radius:8px;overflow:hidden;position:relative;background:var(--bg4);border:1px solid var(--bd)}
+  .gal-i img{width:100%;height:100%;object-fit:cover;filter:sepia(15%) contrast(1.05);transition:transform .4s}
+  .gal-i:hover img{transform:scale(1.05)}
+  .gal-i .cap{position:absolute;bottom:0;left:0;right:0;padding:6px 10px;background:linear-gradient(transparent,rgba(0,0,0,.8));font-size:11px;color:#fff}
+  .gal-ph{display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:11px;color:var(--td);gap:4px}
+  .gal-ph svg{width:22px;height:22px;color:rgba(200,164,92,.3)}
+
+  /* Links */
+  .pls{display:flex;gap:8px;flex-wrap:wrap;padding-top:14px;border-top:1px solid var(--bd)}
+  .pl{padding:7px 16px;border-radius:18px;font-size:12px;display:inline-flex;align-items:center;gap:5px;transition:.25s}
+  .pl.p1{background:var(--gold);color:var(--bg);font-weight:600}
+  .pl.p1:hover{opacity:.85;text-decoration:none}
+  .pl.p2{border:1px solid var(--bd);color:var(--td)}
+  .pl.p2:hover{border-color:var(--gold);color:var(--gold);text-decoration:none}
+
+  /* Source */
+  .src{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--td);background:rgba(255,255,255,.025);border:1px solid var(--bd);border-radius:6px;padding:5px 10px;margin-top:14px;flex-wrap:wrap}
+  .src a{color:var(--gold)}
+  .src-ico{flex-shrink:0}
+
+  /* Footer */
+  .ftn{max-width:1100px;margin:0 auto 50px;padding:0 20px}
+  .fn{background:var(--gd);border:1px solid rgba(200,164,92,.18);border-radius:12px;padding:16px 20px;display:flex;gap:10px;align-items:flex-start;font-size:13px;line-height:1.7}
+  .fn svg{flex-shrink:0;color:var(--gold);margin-top:2px}
+
+  @media(max-width:768px){
+    .ig{grid-template-columns:1fr}
+    .gal-g{grid-template-columns:repeat(2,1fr)}
+    .ph{flex-wrap:wrap}
+    .bk{flex-direction:column}
+    .bk-img{width:60px;height:80px}
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="bc"><a href="#">الرئيسية</a><span>›</span><a href="#">الأرشيف</a><span>›</span>شخصيات وثّقت الكويت</div>
+  <h1>شخصيات <em>وثّقت الكويت</em></h1>
+  <p class="ld">سِيَر ومؤلفات وصور ووثائق تركها رحّالة ودبلوماسيون وأطباء ومصوّرون عن الكويت القديمة — مجموعة ومحفوظة في منصة كاظمة مع الإشارة الكاملة لكل مصدر</p>
+  <div class="sts">
+    <div class="st"><b>٦</b><small>شخصية موثّقة بالتفصيل</small></div>
+    <div class="st"><b>٧</b><small>كتاب ومؤلَّف</small></div>
+    <div class="st"><b>٥</b><small>أرشيفات عالمية</small></div>
+  </div>
+</section>
+
+<!-- FILTERS -->
+<div class="flt"><div class="flt-in">
+  <button class="fb on" onclick="F('all',this)">الكل</button>
+  <button class="fb" onclick="F('dip',this)">دبلوماسيون</button>
+  <button class="fb" onclick="F('doc',this)">أطباء ومبشّرون</button>
+  <button class="fb" onclick="F('pho',this)">مصوّرون</button>
+  <button class="fb" onclick="F('aut',this)">مؤلفون</button>
+  <div class="sw">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+    <input placeholder="ابحث بالاسم أو الكتاب..." oninput="S(this.value)">
+  </div>
+</div></div>
+
+<!-- MAIN -->
+<div class="main">
+
+<!-- ═══════════ 1. HAROLD DICKSON ═══════════ -->
+<article class="pe open" data-c="dip aut">
+<div class="ph" onclick="T(this.parentElement)">
+  <div class="pav"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/H.R.P_Dickson_in_1919.JPG" alt="هارولد ديكسون في الكويت ١٩١٩"></div>
+  <div class="pi">
+    <div class="pn">العقيد هارولد ريتشارد باتريك ديكسون</div>
+    <div class="pen">Colonel Harold R.P. Dickson · 1881–1959</div>
+    <div class="pm">
+      <span>بريطاني</span><span class="s"></span><span>الكويت ١٩٢٩–١٩٥٩</span>
+      <span class="tg"><span class="t t-r">عميل سياسي</span><span class="t t-r">مؤلف</span><span class="t t-p">وصول جزئي</span></span>
+    </div>
+  </div>
+  <div class="pt">▾</div>
+</div>
+<div class="pb"><div class="pc">
+
+  <div class="pa">
+    <p><strong>هارولد ديكسون</strong> هو العميل السياسي البريطاني في الكويت من ١٩٢٩ إلى ١٩٣٦، وبقي مقيماً فيها حتى وفاته عام ١٩٥٩. وُلد في بيروت ١٨٨١ لأب دبلوماسي بريطاني في بلاد الشام. رضع من مُرضعة بدوية من قبيلة عنزة، فنشأت بينه وبين القبيلة رابطة «أخوّة الرضاعة» وفق العرف الإسلامي — ممّا فتح له أبواب المجتمع البدوي على مصراعيها.</p>
+    <p>عاش ديكسون بين البدو وتعلّم لهجاتهم ووثّق عاداتهم الدينية والاجتماعية بدقة متناهية. كان شاهداً على تحوّل الكويت من مجتمع يعتمد على الغوص وتجارة اللؤلؤ إلى دولة نفطية. وثّق <strong>المساجد القديمة</strong> والأسواق والحياة البحرية والصحراوية بمئات الصور. علاقته الوثيقة بالشيخ أحمد الجابر الصباح أثرت توثيقه بتفاصيل لا تتوفر لدى غيره.</p>
+    <p>بيته في مدينة الكويت تحوّل إلى <strong>«بيت ديكسون الثقافي»</strong> — معلم ثقافي يستقبل الزوار حتى اليوم.</p>
+  </div>
+
+  <div class="ig">
+    <div class="ib"><div class="ib-l">الأرشيف</div><div class="ib-v">مركز الشرق الأوسط (MEC)، كلية سانت أنتوني، جامعة أكسفورد — أوراق شخصية ومراسلات وصور</div></div>
+    <div class="ib"><div class="ib-l">حجم المجموعة</div><div class="ib-v">مئات الصور الفوتوغرافية + مذكرات + مراسلات + خرائط مرسومة يدوياً</div></div>
+    <div class="ib"><div class="ib-l">المواضيع الرئيسية</div><div class="ib-v">الكويت قبل النفط · الحياة البدوية · القبائل والأنساب · تجارة اللؤلؤ · المساجد القديمة · الصحراء</div></div>
+    <div class="ib"><div class="ib-l">الصلة بالتراث الديني</div><div class="ib-v">وثّق العادات الدينية للبدو ومواسم الحج والمساجد القديمة في الكويت وحلقات الذكر والحياة الروحية للمجتمع — فصول كاملة عن الممارسات الدينية في كتبه</div></div>
+  </div>
+
+  <div class="bks">
+    <div class="bks-t">مؤلفاته عن الكويت</div>
+    <div class="bk">
+      <div class="bk-img"><img src="https://archive.org/services/img/kuwaitherneighbo0000dick" alt="غلاف كتاب الكويت وجيرانها"></div>
+      <div class="bk-d">
+        <div class="bk-n">الكويت وجيرانها — Kuwait and Her Neighbours (١٩٥٦)</div>
+        <div class="bk-m">أهم مرجع بريطاني عن الكويت في القرن العشرين. يغطي التاريخ والجغرافيا والقبائل والحياة الاجتماعية والدينية بتفصيل لا مثيل له. تُرجم جزئياً للعربية. يتضمن فصولاً عن المساجد والأعياد الدينية والعلاقات القبلية.<br>
+        <a href="https://archive.org/details/kuwaitherneighbo0000dick" target="_blank">📖 اقرأ في أرشيف الإنترنت ←</a></div>
+      </div>
+    </div>
+    <div class="bk">
+      <div class="bk-img"><img src="https://archive.org/services/img/arabofdesertglim0000dick" alt="غلاف كتاب عرب الصحراء"></div>
+      <div class="bk-d">
+        <div class="bk-n">عرب الصحراء — The Arab of the Desert (١٩٤٩)</div>
+        <div class="bk-m">دراسة ميدانية معمّقة لحياة البدو — العادات والتقاليد والحياة الدينية وأنظمة القبائل ومعتقداتهم وطقوسهم. فصول كاملة عن الممارسات الدينية والأعراف الإسلامية في البادية.<br>
+        <a href="https://archive.org/details/arabofdesertglim0000dick" target="_blank">📖 اقرأ في أرشيف الإنترنت ←</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pls">
+    <a class="pl p1" href="#">اقرأ السيرة الكاملة ←</a>
+    <a class="pl p2" href="https://en.wikipedia.org/wiki/H._R._P._Dickson" target="_blank">ويكيبيديا</a>
+    <a class="pl p2" href="https://archive.org/search?query=dickson+kuwait" target="_blank">كتبه في أرشيف الإنترنت</a>
+  </div>
+
+  <div class="src">
+    <span class="src-ico">📌</span>
+    الصورة: Wikimedia Commons (Public Domain) · السيرة: مصادر عامة متعددة · أغلفة الكتب: <a href="https://archive.org" target="_blank">Internet Archive</a> · استرشاد بدليل <a href="https://alfalaj.org/ar/lookingin" target="_blank">الفَلَج</a>
+  </div>
+
+</div></div>
+</article>
+
+<!-- ═══════════ 2. VIOLET DICKSON ═══════════ -->
+<article class="pe" data-c="aut pho">
+<div class="ph" onclick="T(this.parentElement)">
+  <div class="pav noi">أم سعود</div>
+  <div class="pi">
+    <div class="pn">فيوليت ديكسون «أم سعود»</div>
+    <div class="pen">Violet Dickson · 1896–1991</div>
+    <div class="pm">
+      <span>بريطانية</span><span class="s"></span><span>الكويت ١٩٢٩–١٩٩١ (أكثر من ٦١ عاماً)</span>
+      <span class="tg"><span class="t t-r">كاتبة</span><span class="t t-r">عالمة نبات</span><span class="t t-p">وصول جزئي</span></span>
+    </div>
+  </div>
+  <div class="pt">▾</div>
+</div>
+<div class="pb"><div class="pc">
+  <div class="pa">
+    <p><strong>فيوليت ديكسون</strong> «أم سعود» — أطول إقامة غربية متواصلة في الكويت على الإطلاق: <strong>أكثر من ٦١ عاماً</strong> من وصولها ١٩٢٩ حتى وفاتها ١٩٩١. زوجة العقيد هارولد ديكسون، لكنها مصوّرة وكاتبة وعالمة نبات بذاتها. حصلت على لقب «أم سعود» من أهل الكويت تقديراً لها.</p>
+    <p>وثّقت بالصور والكتابة <strong>حياة المرأة الكويتية</strong> — عالم لم يستطع الرجال الأجانب الوصول إليه: الأعراس والأعياد الدينية وحياة الحريم والأسواق النسائية. أرشيفها الفوتوغرافي فريد لأنه يغطي فترة ممتدة من حقبة اللؤلؤ إلى ما بعد طفرة النفط — ستة عقود في صور.</p>
+    <p>مُنحت وسام الكويت التقديري. عُرفت بحبها الشديد للكويت التي اعتبرتها وطنها الثاني.</p>
+  </div>
+
+  <div class="ig">
+    <div class="ib"><div class="ib-l">الأرشيف</div><div class="ib-v">مركز الشرق الأوسط (MEC)، كلية سانت أنتوني، جامعة أكسفورد</div></div>
+    <div class="ib"><div class="ib-l">حجم المجموعة</div><div class="ib-v">مئات الصور الفوتوغرافية تغطي ٦ عقود من تاريخ الكويت</div></div>
+    <div class="ib"><div class="ib-l">المواضيع</div><div class="ib-v">حياة المرأة الكويتية · الأعراس · الأعياد الدينية · نباتات الصحراء · المخيمات البدوية</div></div>
+    <div class="ib"><div class="ib-l">الصلة بالتراث الديني</div><div class="ib-v">وثّقت الأعياد الدينية والاحتفالات والمناسبات من منظور نسائي فريد — رمضان والعيد والمولد النبوي وأعراس الحريم</div></div>
+  </div>
+
+  <div class="bks">
+    <div class="bks-t">مؤلفاتها</div>
+    <div class="bk">
+      <div class="bk-img"><img src="https://archive.org/services/img/fortyyearsinkuwa0000dick" alt="غلاف أربعون عاماً في الكويت"></div>
+      <div class="bk-d">
+        <div class="bk-n">أربعون عاماً في الكويت — Forty Years in Kuwait (١٩٧١)</div>
+        <div class="bk-m">مذكراتها عن حياتها في الكويت — تفاصيل فريدة عن المجتمع والعادات الدينية والاحتفالات. كتبتها بعد ٤٠ عاماً من المعايشة اليومية.<br>
+        <a href="https://archive.org/details/fortyyearsinkuwa0000dick" target="_blank">📖 اقرأ في أرشيف الإنترنت ←</a></div>
+      </div>
+    </div>
+    <div class="bk">
+      <div class="bk-img" style="display:flex;align-items:center;justify-content:center;font-size:22px">🌿</div>
+      <div class="bk-d">
+        <div class="bk-n">النباتات البرية في الكويت والبحرين — The Wild Flowers of Kuwait and Bahrain (١٩٥٥)</div>
+        <div class="bk-m">أول دراسة علمية منهجية للنباتات البرية في الكويت مع رسوم توضيحية. مرجع علمي مهم حتى اليوم.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pls">
+    <a class="pl p1" href="#">اقرأ السيرة الكاملة ←</a>
+    <a class="pl p2" href="https://en.wikipedia.org/wiki/Violet_Dickson" target="_blank">ويكيبيديا</a>
+  </div>
+
+  <div class="src">
+    <span class="src-ico">📌</span>
+    السيرة: مصادر عامة · غلاف الكتاب: <a href="https://archive.org" target="_blank">Internet Archive</a> · استرشاد بـ<a href="https://alfalaj.org/ar/lookingin" target="_blank">الفَلَج</a>
+  </div>
+</div></div>
+</article>
+
+<!-- ═══════════ 3. CAPTAIN SHAKESPEAR ═══════════ -->
+<article class="pe" data-c="dip pho">
+<div class="ph" onclick="T(this.parentElement)">
+  <div class="pav"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/William_Henry_Irvine_Shakespear.png/250px-William_Henry_Irvine_Shakespear.png" alt="الكابتن شكسبير"></div>
+  <div class="pi">
+    <div class="pn">الكابتن ويليام هنري إروين شكسبير</div>
+    <div class="pen">Captain W.H.I. Shakespear · 1878–1915 (قُتل في معركة جراب)</div>
+    <div class="pm">
+      <span>بريطاني</span><span class="s"></span><span>الكويت ١٩٠٩–١٩١٤</span>
+      <span class="tg"><span class="t t-r">وكيل سياسي</span><span class="t t-r">مستكشف</span><span class="t t-r">مصوّر</span><span class="t t-o">مفتوح</span></span>
+    </div>
+  </div>
+  <div class="pt">▾</div>
+</div>
+<div class="pb"><div class="pc">
+  <div class="pa">
+    <p><strong>الكابتن شكسبير</strong> — الوكيل السياسي البريطاني في الكويت من ١٩٠٩ حتى مقتله في معركة جراب يناير ١٩١٥. مستكشف ومصوّر استثنائي. أجرى <strong>سبع رحلات استكشافية</strong> إلى قلب الجزيرة العربية انطلاقاً من الكويت — بما فيها رحلة ٢,٩٠٠ كم من الكويت إلى مصر عبر الجزيرة العربية عام ١٩١٤.</p>
+    <p>هو <strong>أول من صوّر الملك عبدالعزيز بن سعود</strong> — حين لم يكن ابن سعود قد رأى كاميرا من قبل. ترك أكثر من <strong>٢٠٠ صورة على ألواح زجاجية</strong> تشمل الكويت القديمة: أسواقها ومساجدها وميناءها، وقبائل نجد ومعالم الصحراء. قُتل في معركة جراب وهو يقاتل إلى جانب ابن سعود، ودُفن في الكويت.</p>
+  </div>
+
+  <div class="ig">
+    <div class="ib"><div class="ib-l">الأرشيف الأول</div><div class="ib-v">الجمعية الجغرافية الملكية (Royal Geographical Society)، لندن — مجموعة الألواح الزجاجية</div></div>
+    <div class="ib"><div class="ib-l">الأرشيف الثاني</div><div class="ib-v">وثائق مكتب الهند (India Office Records)، المكتبة البريطانية — المراسلات والتقارير</div></div>
+    <div class="ib"><div class="ib-l">حجم المجموعة</div><div class="ib-v">أكثر من ٢٠٠ صورة فوتوغرافية على ألواح زجاجية + خرائط مرسومة يدوياً + تقارير سياسية</div></div>
+    <div class="ib"><div class="ib-l">الصلة بالتراث الديني</div><div class="ib-v">صوّر مساجد الكويت القديمة وطرق الحج التاريخية ومناظر نجد والرياض والنفود الكبير. وثائقه تُظهر المشهد الديني في الكويت مطلع القرن العشرين</div></div>
+  </div>
+
+  <div class="pls">
+    <a class="pl p1" href="#">اقرأ السيرة الكاملة ←</a>
+    <a class="pl p2" href="https://en.wikipedia.org/wiki/William_Shakespear_(explorer)" target="_blank">ويكيبيديا</a>
+    <a class="pl p2" href="#">صور ألواح الزجاج — RGS</a>
+  </div>
+
+  <div class="src">
+    <span class="src-ico">📌</span>
+    الصورة: Wikimedia Commons (Public Domain) · السيرة: مصادر عامة · الأرشيف: RGS لندن + المكتبة البريطانية · استرشاد بـ<a href="https://alfalaj.org/ar/lookingin" target="_blank">الفَلَج</a>
+  </div>
+</div></div>
+</article>
+
+<!-- ═══════════ 4. ALAN VILLIERS ═══════════ -->
+<article class="pe" data-c="pho aut">
+<div class="ph" onclick="T(this.parentElement)">
+  <div class="pav"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Alan_Villiers%2C_Portrait_-_SLV_H98.150-62.jpg/250px-Alan_Villiers%2C_Portrait_-_SLV_H98.150-62.jpg" alt="آلان فيليرز"></div>
+  <div class="pi">
+    <div class="pn">آلان فيليرز — مصوّر البحر الكويتي</div>
+    <div class="pen">Alan Villiers · 1903–1982</div>
+    <div class="pm">
+      <span>أسترالي</span><span class="s"></span><span>الكويت ديسمبر ١٩٣٨ – يونيو ١٩٣٩</span>
+      <span class="tg"><span class="t t-r">مصوّر بحري</span><span class="t t-r">كاتب</span><span class="t t-o">مفتوح</span></span>
+    </div>
+  </div>
+  <div class="pt">▾</div>
+</div>
+<div class="pb"><div class="pc">
+  <div class="pa">
+    <p><strong>آلان فيليرز</strong> — أسترالي عاشق للبحر أبحر نحو <strong>٧ أشهر على متن ذاو «البيان» الكويتي</strong> من ديسمبر ١٩٣٨ إلى يونيو ١٩٣٩. ترك <strong>أهم سجل فوتوغرافي على الإطلاق</strong> لثقافة الكويت البحرية قبل النفط — آخر توثيق لعصر الشراع الكويتي الذهبي.</p>
+    <p>أبحر مع النوخذة الكويتي من الكويت إلى عدن وزنجبار والهند، ووثّق البحارة الكويتيين والغوص على اللؤلؤ وبناء السفن وطرق التجارة البحرية. صوره تحفظ لحظات لا يمكن تكرارها — ميناء الكويت القديم والسفن الشراعية والنواخذة. أرشيفه الفوتوغرافي محفوظ في المتحف الوطني للبحرية بغرينتش وفي <strong>دار الآثار الإسلامية بالكويت</strong>.</p>
+  </div>
+
+  <div class="ig">
+    <div class="ib"><div class="ib-l">الأرشيف</div><div class="ib-v">المتحف الوطني للبحرية (National Maritime Museum)، غرينتش، لندن + دار الآثار الإسلامية، الكويت</div></div>
+    <div class="ib"><div class="ib-l">حجم المجموعة</div><div class="ib-v">مئات الصور النادرة — منشورة في كتاب Sons of Sinbad وفي معارض متعددة</div></div>
+    <div class="ib"><div class="ib-l">المواضيع</div><div class="ib-v">الحياة البحرية الكويتية · الغوص على اللؤلؤ · بناء السفن · النواخذة · طرق التجارة البحرية · ميناء الكويت القديم</div></div>
+    <div class="ib"><div class="ib-l">الصلة بالتراث الديني</div><div class="ib-v">وثّق ممارسات البحارة الدينية على ظهر السفن — الصلاة في عرض البحر والأدعية البحرية وعادات الإبحار المرتبطة بالإيمان</div></div>
+  </div>
+
+  <div class="bks">
+    <div class="bks-t">مؤلفاته</div>
+    <div class="bk">
+      <div class="bk-img"><img src="https://archive.org/services/img/sonsofsinbad0000alan" alt="غلاف أبناء السندباد"></div>
+      <div class="bk-d">
+        <div class="bk-n">أبناء السندباد — Sons of Sinbad (١٩٤٠)</div>
+        <div class="bk-m">تحفة أدبية وفوتوغرافية عن رحلته على ذاو كويتي. مئات الصور عن البحارة الكويتيين والموانئ والتجارة. من أهم الكتب عن التاريخ البحري للخليج العربي على الإطلاق.<br>
+        <a href="https://archive.org/details/sonsofsinbad0000alan" target="_blank">📖 اقرأ في أرشيف الإنترنت ←</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pls">
+    <a class="pl p1" href="#">اقرأ السيرة الكاملة ←</a>
+    <a class="pl p2" href="https://en.wikipedia.org/wiki/Alan_Villiers" target="_blank">ويكيبيديا</a>
+    <a class="pl p2" href="https://www.rmg.co.uk/collections/alan-villiers" target="_blank">أرشيف NMM غرينتش</a>
+  </div>
+
+  <div class="src">
+    <span class="src-ico">📌</span>
+    الصورة: Wikimedia Commons — State Library Victoria (Public Domain) · غلاف الكتاب: <a href="https://archive.org" target="_blank">Internet Archive</a> · استرشاد بـ<a href="https://alfalaj.org/ar/lookingin" target="_blank">الفَلَج</a>
+  </div>
+</div></div>
+</article>
+
+<!-- ═══════════ 5. DR. MYLREA ═══════════ -->
+<article class="pe" data-c="doc">
+<div class="ph" onclick="T(this.parentElement)">
+  <div class="pav noi">م</div>
+  <div class="pi">
+    <div class="pn">الدكتور ستانلي ميلريا — طبيب الكويت قبل النفط</div>
+    <div class="pen">Dr. C. Stanley Mylrea · 1876–1952</div>
+    <div class="pm">
+      <span>أمريكي</span><span class="s"></span><span>الكويت ١٩١٠–١٩٥١ (٤٠ عاماً)</span>
+      <span class="tg"><span class="t t-r">طبيب مبشّر</span><span class="t t-p">وصول جزئي</span></span>
+    </div>
+  </div>
+  <div class="pt">▾</div>
+</div>
+<div class="pb"><div class="pc">
+  <div class="pa">
+    <p><strong>د. ستانلي ميلريا</strong> — طبيب مبشّر أمريكي من الرسالة العربية التابعة للكنيسة الإصلاحية في أمريكا (Reformed Church in America). عمل في محطة الكويت أكثر من <strong>٤٠ عاماً</strong> — من أطول فترات الخدمة لأي أجنبي في الكويت.</p>
+    <p>أسّس أول عيادة طبية حديثة في الكويت وعالج الناس بغض النظر عن دينهم أو طبقتهم، ممّا أكسبه احترام الكويتيين. كتب مخطوطة <strong>«الكويت قبل النفط»</strong> بين ١٩٤٥ و١٩٥١ — وثيقة لا تُقدَّر بثمن عن المجتمع الكويتي القديم، فيها وصف مفصّل للمساجد و<strong>الكتاتيب</strong> (المدارس الدينية التقليدية) والأسواق والحياة اليومية.</p>
+  </div>
+
+  <div class="ig">
+    <div class="ib"><div class="ib-l">الأرشيف</div><div class="ib-v">أرشيفات كلية هوب (Hope College Archives)، هولاند، ميشيغان، الولايات المتحدة — مجموعة الرسالة العربية</div></div>
+    <div class="ib"><div class="ib-l">المواضيع</div><div class="ib-v">الطب في الكويت القديمة · الكتاتيب · المساجد · الحياة اليومية · العلاقة بين الطب التقليدي والحديث</div></div>
+    <div class="ib"><div class="ib-l">الصلة بالتراث الديني</div><div class="ib-v">وصف تفصيلي للكتاتيب ونظام تعليم القرآن وحلقات العلم والمساجد — أهم توثيق غربي للحياة الدينية التعليمية في الكويت القديمة</div></div>
+  </div>
+
+  <div class="bks">
+    <div class="bks-t">مؤلفاته</div>
+    <div class="bk">
+      <div class="bk-img" style="display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--td);text-align:center;padding:4px">📘<br>مخطوطة</div>
+      <div class="bk-d">
+        <div class="bk-n">الكويت قبل النفط — Kuwait Before Oil (مخطوطة ١٩٤٥–١٩٥١)</div>
+        <div class="bk-m">مذكراته عن أربعة عقود في الكويت. توثيق فريد للمجتمع والعادات والمساجد والطب الشعبي والكتاتيب. المخطوطة محفوظة في أرشيفات كلية هوب وأجزاء منها نُشرت لاحقاً.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pls">
+    <a class="pl p1" href="#">اقرأ السيرة الكاملة ←</a>
+    <a class="pl p2" href="#">الكتاتيب في وصف ميلريا</a>
+  </div>
+
+  <div class="src">
+    <span class="src-ico">📌</span>
+    السيرة: مصادر عامة + أرشيفات كلية هوب · استرشاد بـ<a href="https://alfalaj.org/ar/lookingin" target="_blank">الفَلَج</a>
+  </div>
+</div></div>
+</article>
+
+<!-- ═══════════ 6. DR. CALVERLEY ═══════════ -->
+<article class="pe" data-c="doc aut">
+<div class="ph" onclick="T(this.parentElement)">
+  <div class="pav noi">إ</div>
+  <div class="pi">
+    <div class="pn">الدكتورة إليانور كالفرلي — طبيبة نساء الكويت</div>
+    <div class="pen">Dr. Eleanor T. Calverley · 1887–1968</div>
+    <div class="pm">
+      <span>أمريكية</span><span class="s"></span><span>الكويت ١٩١٢–١٩٢٩</span>
+      <span class="tg"><span class="t t-r">طبيبة مبشّرة</span><span class="t t-p">وصول جزئي</span></span>
+    </div>
+  </div>
+  <div class="pt">▾</div>
+</div>
+<div class="pb"><div class="pc">
+  <div class="pa">
+    <p><strong>د. إليانور كالفرلي</strong> — طبيبة أمريكية مبشّرة وصلت الكويت عام ١٩١٢ ضمن الرسالة العربية. كانت <strong>أول طبيبة نساء</strong> في الكويت — ممّا منحها وصولاً حصرياً لعالم المرأة الكويتية الذي لم يدخله أي أجنبي ذكر من قبل.</p>
+    <p>وثّقت الممارسات الصحية التقليدية والأعراس والطقوس الدينية وحياة الحريم والاحتفالات. تزوّجت زميلها الدكتور إدوين كالفرلي (الذي أصبح عالماً في اللغة العربية والإسلام). كتابها يمثّل <strong>نافذة نادرة على الجانب النسائي</strong> من المجتمع الكويتي المحافظ في مطلع القرن العشرين.</p>
+  </div>
+
+  <div class="ig">
+    <div class="ib"><div class="ib-l">الأرشيف</div><div class="ib-v">أرشيف الكنيسة الإصلاحية في أمريكا (RCA) + أرشيفات كلية هوب</div></div>
+    <div class="ib"><div class="ib-l">المواضيع</div><div class="ib-v">الرعاية الصحية للمرأة · الأعراس الكويتية · الطقوس الدينية النسائية · الطب الشعبي · حياة الحريم</div></div>
+    <div class="ib"><div class="ib-l">الصلة بالتراث الديني</div><div class="ib-v">وثّقت الطقوس الدينية النسائية والأعراس الإسلامية ومراسم الولادة والختان وأعياد المرأة — منظور فريد لا يتوفر في أي مصدر آخر</div></div>
+  </div>
+
+  <div class="bks">
+    <div class="bks-t">مؤلفاتها</div>
+    <div class="bk">
+      <div class="bk-img"><img src="https://archive.org/services/img/myarabiandaysnig00calv" alt="غلاف أيامي وليالي العربية"></div>
+      <div class="bk-d">
+        <div class="bk-n">أيامي وليالي العربية — My Arabian Days and Nights (١٩٥٨)</div>
+        <div class="bk-m">مذكراتها كطبيبة في الكويت القديمة. تفاصيل فريدة عن حياة المرأة والعادات الدينية والطب الشعبي. من أندر المصادر عن العالم النسائي في الخليج.<br>
+        <a href="https://archive.org/details/myarabiandaysnig00calv" target="_blank">📖 اقرأ في أرشيف الإنترنت ←</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pls">
+    <a class="pl p1" href="#">اقرأ السيرة الكاملة ←</a>
+    <a class="pl p2" href="https://en.wikipedia.org/wiki/Eleanor_Jane_Taylor_Calverley" target="_blank">ويكيبيديا</a>
+  </div>
+
+  <div class="src">
+    <span class="src-ico">📌</span>
+    السيرة: مصادر عامة + Wikipedia · غلاف الكتاب: <a href="https://archive.org" target="_blank">Internet Archive</a> · استرشاد بـ<a href="https://alfalaj.org/ar/lookingin" target="_blank">الفَلَج</a>
+  </div>
+</div></div>
+</article>
+
+</div>
+
+<!-- FOOTER -->
+<div class="ftn"><div class="fn">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+  <div>
+    <strong>سياسة المحتوى في منصة كاظمة:</strong>
+    نجمع المحتوى الكامل مع الإشارة الدقيقة لكل مصدر. المعلومات التاريخية (الأسماء والتواريخ والأحداث) من الملك العام.
+    الصور الشخصية من <a href="https://commons.wikimedia.org" target="_blank">Wikimedia Commons</a> (Public Domain).
+    أغلفة الكتب من <a href="https://archive.org" target="_blank">أرشيف الإنترنت</a>.
+    تم الاسترشاد بدليل <a href="https://alfalaj.org/ar/" target="_blank">الفَلَج</a> (غدة المهنا أبا الخيل، برلين) في تحديد مواقع الأرشيفات.
+    الكتب الكاملة متاحة للقراءة عبر أرشيف الإنترنت.
+  </div>
+</div></div>
+
+<script>
+function T(e){e.classList.toggle('open')}
+function F(c,b){document.querySelectorAll('.fb').forEach(x=>x.classList.remove('on'));b.classList.add('on');document.querySelectorAll('.pe').forEach(e=>{e.style.display=(c==='all'||(e.dataset.c||'').includes(c))?'':'none'})}
+function S(q){q=q.toLowerCase();document.querySelectorAll('.pe').forEach(e=>{e.style.display=e.textContent.toLowerCase().includes(q)?'':'none'})}
+</script>
+</body>
+</html>
